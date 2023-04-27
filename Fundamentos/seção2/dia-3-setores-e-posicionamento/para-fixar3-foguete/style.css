@@ -9,6 +9,7 @@ div:nth-of-type(2){
 }
 div:nth-of-type(3){
   background-color: purple;
+  font-size: 20px;
 }
 div:nth-of-type(4){
   background-color: darkblue;
@@ -17,4 +18,11 @@ div:nth-of-type(4){
 div:nth-of-type(5){
   background-color: lightcoral;
 }
- 
+h3{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  ;
+}
+div:nth-child(odd) h3 {
+  font-style: italic;
+}
