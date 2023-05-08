@@ -134,12 +134,12 @@ console.log(inverso);
 
 console.log("---");
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = array[0]
-for (index = 0; index < array.length; index += 1){
+let array1 = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = array1[0]
+for (index = 0; index < array1.length; index += 1){
   
-  if (maiorPalavra.length < array[index].length) {
-    maiorPalavra = array[index]
+  if (maiorPalavra.length < array1[index].length) {
+    maiorPalavra = array1[index]
   }
 }
 console.log(maiorPalavra);
@@ -158,7 +158,7 @@ console.log("---");
 
 let maiorPrimo = 0;
 
-for(let numeroAtual = 2; numeroAtual <= 50; numeroAtual += 1){
+for(let numeroAtual = 50; numeroAtual >= 2; numeroAtual -= 1) {
   let primo = true;
   for(let divisor = 2; divisor < numeroAtual; divisor += 1){
     if (numeroAtual % divisor === 0){
@@ -167,6 +167,8 @@ for(let numeroAtual = 2; numeroAtual <= 50; numeroAtual += 1){
   }
   if (primo) {
     maiorPrimo = numeroAtual;
+    break
   }
 }
 console.log(maiorPrimo);
+
