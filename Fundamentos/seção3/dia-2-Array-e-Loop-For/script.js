@@ -126,6 +126,47 @@ console.log(fatorial);
 
 console.log("---");
 
-let word = 'tryber';
+let word = 'trybe';
 
-for(index = 0)
+let inverso = word.split('').reverse().join('');
+
+console.log(inverso);
+
+console.log("---");
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = array[0]
+for (index = 0; index < array.length; index += 1){
+  
+  if (maiorPalavra.length < array[index].length) {
+    maiorPalavra = array[index]
+  }
+}
+console.log(maiorPalavra);
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let menorPalavra = array[0]
+for (index = 0; index < array.length; index += 1){
+  
+  if (menorPalavra.length > array[index].length) {
+    menorPalavra = array[index]
+  }
+}
+console.log(menorPalavra);
+
+console.log("---");
+
+let maiorPrimo = 0;
+
+for(let numeroAtual = 2; numeroAtual <= 50; numeroAtual += 1){
+  let primo = true;
+  for(let divisor = 2; divisor < numeroAtual; divisor += 1){
+    if (numeroAtual % divisor === 0){
+      primo = false;
+    }
+  }
+  if (primo) {
+    maiorPrimo = numeroAtual;
+  }
+}
+console.log(maiorPrimo);
