@@ -12,7 +12,7 @@ let names = {
   console.log('Olá, ' + names[keys]);
  }
 
- console.log(-------);
+ console.log(---) ;
 
 //  Usando o objeto abaixo, utilize for/in e imprima um console.log com as chaves e valores desse objeto. 
 
