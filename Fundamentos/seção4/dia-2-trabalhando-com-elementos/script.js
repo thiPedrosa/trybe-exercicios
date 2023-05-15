@@ -1,13 +1,32 @@
-const whereAreYou = document.getElementById("where-are-you");
-const parent = whereAreYou.parentElement;
+// const whereAreYou = document.getElementById("where-are-you");
+// const parent = whereAreYou.parentElement;
 
-parent.style.color = 'blue'
+// parent.style.color = 'blue'
 
-const firstChildChild = document.getElementById("first-child-of-child");
-firstChildChild.innerText = "Incluindo Texto aqui."
+// const firstChildChild = document.getElementById("first-child-of-child");
+// firstChildChild.innerText = "Incluindo Texto aqui."
 
-const firstChild = parent.firstElementChild;
-const firstChildByWhereAreYou = whereAreYou.previousElementSibling;
-const att = whereAreYou.nextSibling;
-const thirdChild = whereAreYou.nextSibling.nextSibling;
-const thirdChildByParent = parent.lastElementChild.previousElementSibling;
+// const firstChild = parent.firstElementChild;
+// const firstChildByWhereAreYou = whereAreYou.previousElementSibling;
+// const att = whereAreYou.nextSibling;
+// const thirdChild = whereAreYou.nextSibling.nextSibling;
+// const thirdChildByParent = parent.lastElementChild.previousElementSibling;
+
+//Segundo Exercício foguete 
+
+const father = document.getElementById('pai');
+const newSiblingOndeVoceEsta = document.createElement('section');
+newSiblingOndeVoceEsta.id = 'novoIrmão';
+father.appendChild(newSiblingOndeVoceEsta);
+
+const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta')
+const childOfOndeVoceEsta = document.createElement('section');
+childOfOndeVoceEsta.id = 'novoFilhoDoFilho';
+ondeVoceEsta.appendChild(childOfOndeVoceEsta);
+
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+const filhoDoFilhoDoFilho = document.createElement('section');
+filhoDoFilhoDoFilho.id = 'filhoDoFilhoDoFilhoDoFilho';
+primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+
+const terceiroFilho = filhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling;
