@@ -14,19 +14,25 @@
 
 //Segundo Exercício foguete 
 
-const father = document.getElementById('pai');
-const newSiblingOndeVoceEsta = document.createElement('section');
-newSiblingOndeVoceEsta.id = 'novoIrmão';
-father.appendChild(newSiblingOndeVoceEsta);
+// const father = document.getElementById('pai');
+// const newSiblingOndeVoceEsta = document.createElement('section');
+// newSiblingOndeVoceEsta.id = 'novoIrmão';
+// father.appendChild(newSiblingOndeVoceEsta);
 
-const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta')
-const childOfOndeVoceEsta = document.createElement('section');
-childOfOndeVoceEsta.id = 'novoFilhoDoFilho';
-ondeVoceEsta.appendChild(childOfOndeVoceEsta);
+// const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta')
+// const childOfOndeVoceEsta = document.createElement('section');
+// childOfOndeVoceEsta.id = 'novoFilhoDoFilho';
+// ondeVoceEsta.appendChild(childOfOndeVoceEsta);
 
-const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
-const filhoDoFilhoDoFilho = document.createElement('section');
-filhoDoFilhoDoFilho.id = 'filhoDoFilhoDoFilhoDoFilho';
-primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+// const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+// const filhoDoFilhoDoFilho = document.createElement('section');
+// filhoDoFilhoDoFilho.id = 'filhoDoFilhoDoFilhoDoFilho';
+// primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
 
-const terceiroFilho = filhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+// const terceiroFilho = filhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+
+
+// Para Praticar removeChild
+
+const whereAreYou = document.getElementById('where-are-you');
+whereAreYou.removeChild(whereAreYou.firstElementChild)
