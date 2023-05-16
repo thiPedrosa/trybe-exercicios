@@ -77,3 +77,10 @@ for (let index = 0; index < numbers.length; index += 1){
   unorderedLis.appendChild(list);
 }
 createSectionRight.appendChild(unorderedLis);
+
+
+for (let index = 0; index < 3; index +=1){
+  const createH3 = document.createElement('h3');
+  createH3.innerText = index;
+  createMain.appendChild(createH3);
+}
