@@ -84,3 +84,14 @@ for (let index = 0; index < 3; index +=1){
   createH3.innerText = index;
   createMain.appendChild(createH3);
 }
+
+// Bonus 
+
+const title = document.querySelector('h1');
+title.className = 'title';
+
+const h3 = document.getElementsByTagName('h3');
+
+for (let index = 0; index < 3; index +=1){
+  h3[index].className = 'description';
+}
