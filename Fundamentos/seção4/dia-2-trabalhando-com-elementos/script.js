@@ -55,5 +55,25 @@ const createParagraph = document.createElement('p');
 createMain.innerText = "Algum texto"
 createSection.appendChild(createParagraph);
 
+const createSectionLeft = document.createElement('section');
+createSectionLeft.className = 'left-content';
+createMain.appendChild(createSectionLeft);
 
+const createSectionRight = document.createElement('section');
+createSectionLeft.className = 'right-content';
+createMain.appendChild(createSectionRight);
 
+const img = document.createElement('img');
+img.src = 'https://picsum.photos/200';
+img.className = 'small-image'
+createSectionLeft.appendChild(img);
+
+const unorderedLis = document.createElement('ul');
+const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (let index = 0; index < numbers.length; index += 1){
+  const list = document.createElement('li');
+  list.innerText = numbers[index];
+  unorderedLis.appendChild(list);
+}
+createSectionRight.appendChild(unorderedLis);
