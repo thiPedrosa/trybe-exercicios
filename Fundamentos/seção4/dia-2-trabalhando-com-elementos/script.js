@@ -49,6 +49,11 @@ document.body.appendChild(createMain);
 
 const createSection = document.createElement('section');
 createSection.className = 'center-content';
-createMain.appendChild(createSection)
+createMain.appendChild(createSection);
+
+const createParagraph = document.createElement('p');
+createMain.innerText = "Algum texto"
+createSection.appendChild(createParagraph);
+
 
 
