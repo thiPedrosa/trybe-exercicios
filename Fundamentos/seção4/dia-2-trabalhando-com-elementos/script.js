@@ -31,8 +31,17 @@
 
 // const terceiroFilho = filhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling;
 
-
 // Para Praticar removeChild
 
-const whereAreYou = document.getElementById('where-are-you');
-whereAreYou.removeChild(whereAreYou.firstElementChild)
+// const whereAreYou = document.getElementById('where-are-you');
+// whereAreYou.removeChild(whereAreYou.firstElementChild)
+
+ //Exercícios Aprofunde seu conhecimento. 
+
+
+const createH1 =  document.createElement('h1')
+createH1.innerText = 'TrybeTrip - Agência de Viagens'
+document.body.appendChild(createH1);
+
+
+
