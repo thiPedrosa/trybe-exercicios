@@ -45,6 +45,10 @@ document.body.appendChild(createH1);
 
 const createMain = document.createElement('main');
 createMain.className = 'main-content'
-document.body.appendChild(createMain)
+document.body.appendChild(createMain);
+
+const createSection = document.createElement('section');
+createSection.className = 'center-content';
+createMain.appendChild(createSection)
 
 
