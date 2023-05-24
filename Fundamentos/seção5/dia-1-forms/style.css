@@ -1,0 +1,13 @@
+body {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.fullName {
+  max-width: 60%;
+
+}
+
+.email {
+  max-width: 60%;
+}
