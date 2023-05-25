@@ -80,7 +80,7 @@ body {
   padding: 20px;
   height: 1%;
 }
-/* Resolve exercicio 1 */
+/* Resolve exercício 1 */
 
 @media print {
   #header, #navigation, #footer {
@@ -92,5 +92,27 @@ body {
 
   #content-container img {
     width: 300px;
+  }
+}
+
+/* Exercício 2 */
+
+@media  screen and (max-width: 600px) {
+  #aside {
+    display: none;
+  }
+  img {
+    max-width: 90vw;
+  }
+  #navigation ul  {
+    flex-direction: column;
+  }
+  #header {
+    position: fixed;
+    width: 100vw;
+    height: 75px
+  }
+  #navigation {
+    padding-top: 75px;
   }
 }
