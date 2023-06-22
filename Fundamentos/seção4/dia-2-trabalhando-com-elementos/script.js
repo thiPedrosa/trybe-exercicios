@@ -95,4 +95,7 @@ const h3 = document.getElementsByTagName('h3');
 for (let index = 0; index < 3; index +=1){
   h3[index].className = 'description';
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> exercicios/fundamentos-4.2
