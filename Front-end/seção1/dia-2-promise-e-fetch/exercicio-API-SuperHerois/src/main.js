@@ -11,7 +11,7 @@ const MAX_HEROES = 1000;
 const randomId = () => Math.floor(Math.random() * MAX_HEROES);
 
 button.addEventListener('click', () => {
-  event.preventDefault();
+  // event.preventDefault();
   const id = randomId;
   fetch(`${BASE_URL}/id/${id}.json`)
     .then((result) => result.json())
